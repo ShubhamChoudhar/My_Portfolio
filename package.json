@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio Website",
+  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
     "test": "jest"

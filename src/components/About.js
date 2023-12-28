@@ -87,11 +87,11 @@ const About = () => {
             <div className="mb-2 md:mb-0 md:mr-8">
               <span className="text-orange-300 text-lg font-semibold">The University of Texas at Arlington</span>
               <span className="block md:inline-block text-md pl-4 md:pl-0">
-                Master of Science - Computer Science
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Master of Science - Computer Science
               </span>
             </div>
             <div className="text-md text-white md:text-right flex-grow text-md pl-4 md:pl-0">
-              Aug 2021 – May 2023
+              August 2021 – May 2023
             </div>
           </li>
 
@@ -99,11 +99,11 @@ const About = () => {
             <div className="mb-2 md:mb-0 md:mr-8">
               <span className="text-orange-300 text-lg font-semibold">University of Mumbai</span>
               <span className="block md:inline-block text-md text-md pl-2 md:pl-0">
-                Bachelor of Engineering – Information Technology
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bachelor of Engineering – Information Technology
               </span>
             </div>
             <div className="text-md text-white md:text-right flex-grow text-md pl-2 md:pl-0">
-              Aug 2017 – Jun 2021
+              August 2017 – June 2021
             </div>
           </li>
         </ul>

@@ -84,8 +84,8 @@ const Body = () => {
                   </div>
 
                   <div className="text-white md:text-right">
-                    <span className="md:hidden">Oct 2023 - Present</span>
-                    <span className="hidden md:inline-block">Oct 2023 - Present</span>
+                    <span className="md:hidden">October 2023 - Present</span>
+                    <span className="hidden md:inline-block">October 2023 - Present</span>
                   </div>
                 </li>
 
@@ -116,8 +116,8 @@ const Body = () => {
                   </div>
 
                   <div className="text-white md:text-right">
-                    <span className="md:hidden">Feb 2023 - May 2023</span>
-                    <span className="hidden md:inline-block">Feb 2023 - May 2023</span>
+                    <span className="md:hidden">February 2023 - May 2023</span>
+                    <span className="hidden md:inline-block">February 2023 - May 2023</span>
                   </div>
                 </li>
 
@@ -181,18 +181,18 @@ const Body = () => {
                 <li className="flex justify-between items-center">
                   <div className="text-white">
                     <span className="text-blue-300 text-lg font-bold">
-                      Ultimate AWS Certified Cloud Practioner
+                      AWS Certified Cloud Practioner
                     </span>
                     <span className="ml-4 md:ml-8 text-orange-500 hover:text-orange-300 font-light">
                       <Link
-                        target="_blank"
-                        to="https://www.udemy.com/certificate/UC-ec3ef236-2877-4018-ad43-e0a4a8066809/"
+                        target = "_blank"
+                        to = "https://drive.google.com/file/d/1GaRr4kDS_JEQmSuhYVt4WH4i8Caey-px/view?usp=drive_link"
                       >
                         Certificate
                       </Link>
                     </span>
                   </div>
-                  <span className="text-white md:ml-4">Aug 2023</span>
+                  <span className="text-white md:ml-4">December 2023</span>
                 </li>
               </ul>
 
@@ -211,7 +211,7 @@ const Body = () => {
                       </Link>
                     </span>
                   </div>
-                  <span className="text-white md:ml-4">Aug 2023</span>
+                  <span className="text-white md:ml-4">August 2023</span>
                 </li>
               </ul>
 
@@ -230,7 +230,7 @@ const Body = () => {
                       </Link>
                     </span>
                   </div>
-                  <span className="text-white md:ml-4">Feb 2022</span>
+                  <span className="text-white md:ml-4">February 2022</span>
                 </li>
               </ul>
 
