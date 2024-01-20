@@ -20,7 +20,7 @@ const Header = () => {
               <Link to="/projects" className="text-white text-lg hover:text-orange-300">Projects</Link>
             </li>
             <li>
-              <a href="https://drive.google.com/file/d/13UhMsOdC64OfUhgP0jSvKBPKlGSiQXj7/view?usp=drive_link"
+              <a href="https://drive.google.com/file/d/16Ma0JtYRajOepcaNu9hgV-yfHtxTMONO/view?usp=drive_link"
                  target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-orange-300">Resume</a>
             </li>
             <li>

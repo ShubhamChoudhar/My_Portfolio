@@ -141,7 +141,7 @@ const Contact = () => {
           <h2 className="text-3xl font-bold mb-6 text-orange-300">Connect With Me</h2>
 
           <div className="text-lg text-white mb-4" onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
-            <span className="text-orange-500">Email</span>: <span className = "hover:text-gray-300">shubhcy99@gmail.com</span>
+            <span className="text-orange-500">Email</span>: <span className = "hover:text-gray-300">shubham@myworkmails.com</span>
           </div>
           <div className="text-lg text-white mb-4">
             <span className="text-orange-500">Phone</span>: (210) 660-0183

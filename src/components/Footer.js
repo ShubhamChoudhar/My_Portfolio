@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="mb-4 md:mb-0 text-center md:text-left">
           <h2 className="text-2xl font-bold mb-2 text-orange-300">Contact Me</h2>
           <p className="text-lg" onClick={handleEmailClick} style={{ cursor: 'pointer' }}>
-            <span className="text-orange-500">Email</span>: <span className="hover:text-gray-300">shubhcy99@gmail.com</span>
+            <span className="text-orange-500">Email</span>: <span className="hover:text-gray-300">shubham@myworkmails.com</span>
           </p>
           <p className="text-lg">
             <span className="text-orange-500">Phone</span>: (210) 660-0183
