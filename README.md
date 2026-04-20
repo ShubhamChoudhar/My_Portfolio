@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shubham Choudhary Portfolio
 
-## Getting Started
+A premium personal portfolio built with Next.js, React, TypeScript, Tailwind CSS, Framer Motion, Google Sheets integration, and OpenAI-powered assistant features.
 
-First, run the development server:
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Copy env template:
 
-## Learn More
+```bash
+cp .env.local.example .env.local
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Fill `.env.local` values:
+- `OPENAI_API_KEY` for AI chatbot and AI job match analyzer.
+- `GOOGLE_SERVICE_ACCOUNT_EMAIL` and `GOOGLE_PRIVATE_KEY` for Google Sheets writes.
+- `GOOGLE_SHEET_ID` (already set to your provided sheet id by default in template).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Google Sheets Contact Form Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. In Google Cloud:
+- Create/select a project.
+- Enable **Google Sheets API**.
+- Create a **Service Account** and generate JSON credentials.
 
-## Deploy on Vercel
+2. Put service account values in `.env.local`:
+- `GOOGLE_SERVICE_ACCOUNT_EMAIL`
+- `GOOGLE_PRIVATE_KEY` (keep `\\n` escaped as shown in template)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Share your Google Sheet with service-account email as **Editor**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Once configured, contact form submissions append as:
+- Column A: timestamp
+- Column B: name
+- Column C: email
+- Column D: message
+
+## API Routes
+
+- `POST /api/contact`: saves Name, Email, Message to Google Sheets.
+- `POST /api/ai/chat`: OpenAI-backed portfolio assistant responses.
+- `POST /api/ai/job-match`: OpenAI-based role fit analysis from job description.
+
+## Production Check
+
+```bash
+npm run lint
+npm run build
+```
